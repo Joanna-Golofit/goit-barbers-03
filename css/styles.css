@@ -1,0 +1,425 @@
+:root {
+  --accent-color: #ff6c00;
+  --main-font: 'Open Sans', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+}
+body {
+  font-family: var(--main-font);
+  color: #303030;
+  margin: 0;
+  /* color: var(--accent-color) */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+/* ============ containers ============ */
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: #f5f; */
+}
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  /* background-color: #ccd; */
+}
+
+/* ============ header ============ */
+.navigation__link,
+.phone__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.navigation__link:hover,
+.navigation__link:focus,
+.phone__link:hover,
+.phone__link:focus {
+  color: var(--accent-color);
+}
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  /* box-sizing: border-box; */
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 12px;
+  min-width: 164px;
+}
+.btn:focus,
+.btn:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.btn--light {
+  color: #ffffff;
+}
+.logo__link {
+  display: block;
+  margin-right: 30px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation__item {
+  display: inline-block;
+  margin-left: 40px;
+}
+.header {
+  background-color: #191c26;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.phone__link {
+  margin-right: 40px;
+}
+/* ============ end header ============ */
+
+/* ============ hero ============ */
+
+.social__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.social__link:focus,
+.social__link:hover {
+  color: var(--accent-color);
+}
+.over-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.over-title--light {
+  color: rgba(157, 164, 189, 0.6);
+}
+.main-header {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.description {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-top: 20px;
+}
+.description--light {
+  color: #9da4bd;
+}
+.hero__container {
+  display: flex;
+}
+.social__list {
+  display: flex;
+}
+.social__item:not(:last-child) {
+  margin-right: 40px;
+}
+.hero__lewa {
+  width: 100px;
+  background-color: #ccd;
+}
+.hero__prawa {
+  padding-left: 100px;
+  padding-top: 272px;
+  /* pt - od samego szczytu liczone */
+  padding-bottom: 206px;
+  background-color: #191c26;
+  flex-grow: 1;
+  /* fg - zeby zajelo caly dostepny obszar, a nie tylko tyle ile tresc */
+}
+.hero__description {
+  max-width: 394px;
+}
+/* ============ end hero ============ */
+
+/* ============ O NAS ============ */
+.section-header {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+.section-header--light {
+  color: #ffffff;
+}
+.details {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.o-nas__container {
+  display: flex;
+}
+.images__list {
+  display: flex;
+  justify-content: space-between;
+}
+.images__item:first-child {
+  margin-right: 30px;
+}
+.o-nas__lewa {
+  width: 50%;
+  padding-right: 15px;
+}
+.o-nas__prawa {
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* ============ end O NAS ============ */
+
+/* ============ USŁUGI I CENY ============ */
+.uslugi__name,
+.uslugi__price {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.uslugi__wrapper {
+  display: flex;
+}
+.uslugi__section {
+  background: #191c26;
+}
+.uslugi__list {
+  padding: 30px 40px;
+  width: 50%;
+}
+.uslugi__item {
+  display: flex;
+  justify-content: space-between;
+}
+.uslugi__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.uslugi__btn {
+  display: block;
+  margin-top: 46px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ============ end USŁUGI I CENY ============ */
+
+/* ============ DLACZEGO MY ============ */
+.stats__number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.stats__info {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+.dlaczego-my__container {
+  display: flex;
+}
+.dlaczego-my__left {
+  width: 50%;
+}
+.stats__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dlaczego-my__right {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 100px;
+}
+.stats__item {
+  /* box-sizing: border-box; */
+  width: 170px;
+  display: block;
+  padding: 20px 24px;
+  background: #f7f7f7;
+}
+.stats__item:nth-child(odd) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.stats__item:nth-child(even) {
+  margin-top: 30px;
+}
+.stats__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+/* ============ end DLACZEGO MY ============ */
+
+/* ============ BARBERZY ============ */
+.barberzy__name {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.barberzy__job {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-align: center;
+}
+.barberzy__section {
+  background: #f7f7f7;
+}
+.barberzy__list {
+  display: flex;
+  justify-content: space-between;
+}
+.barberzy__section-header {
+  margin-bottom: 44px;
+}
+.barberzy__name {
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.barberzy__job {
+  margin-bottom: 30px;
+}
+.media__list {
+  display: flex;
+  justify-content: center;
+}
+/* ============ end BARBERZY ============ */
+
+/* ============ GALERIA ============ */
+.galeria__header {
+  display: none;
+}
+.galeria__list {
+  display: flex;
+  justify-content: space-between;
+}
+.galeria__over-title {
+  margin-bottom: 44px;
+}
+/* ============ end GALERIA ============ */
+
+/* ============ FORMULARZ I KONTAKT ============ */
+.address__link,
+.godziny-details {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.address__link {
+  font-style: normal;
+}
+.formularz-kontakt__section {
+  background: #191c26;
+}
+.godziny {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.formularz-kontakt__container {
+  display: flex;
+}
+.formularz-kontakt__section-header {
+  margin-bottom: 44px;
+}
+/* <!-- formularz --> */
+.formularz {
+  width: 50%;
+}
+.formularz-kontakt__btn {
+  margin-top: 44px;
+}
+/* <!-- kontakt --> */
+.formularz {
+  width: 50%;
+}
+.address__item:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.godziny {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+/* ============ end FORMULARZ I KONTAKT ============ */
+
+/* ============ footer ============ */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer__section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+/* ============ end footer ============ */

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <!-- fonty 3 linijki-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>BarberShop</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="logo" href="#">
+            <img
+              class="logo__link"
+              src="./images/Logo.jpg"
+              alt="Logo BarberShop"
+              width="69"
+              height="56"
+            />
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">O nas</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Usługi i ceny</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Barberzy</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__phone-btn-wrapper">
+          <a class="phone__link" href="tel:+48111111111">+48 111 111 111</a>
+          <button class="btn btn--light" type="button">
+            REJESTRACJA ONLINE
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__lewa">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">Instagram</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__prawa">
+            <p class="over-title over-title--light">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="main-header">BarberShop</h1>
+            <p class="description description--light hero__description">
+              Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i
+              elegancko.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ============ O NAS ============ -->
+      <section class="o-nas__section section">
+        <div class="container o-nas__container">
+          <div class="o-nas__lewa">
+            <ul class="images__list">
+              <li class="images__item">
+                <img
+                  class="images__img"
+                  src="./images/o-nas-img1.jpg"
+                  alt="mążczyzna podczas golenia"
+                  width="270"
+                  height="445"
+                />
+              </li>
+              <li class="images__item">
+                <img
+                  class="images__img"
+                  src="./images/o-nas-img2.jpg"
+                  alt="mążczyzna podczas strzyżenia"
+                  width="270"
+                  height="445"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="o-nas__prawa">
+            <p class="over-title">O NAS</p>
+            <h2 class="section-header">Najlepszy Barbershop w Twoim mieście</h2>
+            <p class="description">
+              Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
+              dobrym miejscu.
+            </p>
+            <p class="details">
+              Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas
+              w poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
+              już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
+              Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
+              wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
+            </p>
+            <button class="btn" type="button">REJESTRACJA ONLINE</button>
+          </div>
+        </div>
+      </section>
+      <!-- ============ USŁUGI I CENY ============ -->
+      <section class="uslugi__section section">
+        <div class="container uslugi__container">
+          <p class="over-title over-title--light">
+            PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
+          </p>
+          <h2 class="section-header section-header--light">Usługi i ceny</h2>
+          <div class="uslugi__wrapper">
+            <ul class="uslugi__list">
+              <li class="uslugi__item">
+                <span class="uslugi__name">Męskie strzyżenie</span>
+                <span class="uslugi__price">od 100 zł.</span>
+              </li>
+              <li class="uslugi__item">
+                <span class="uslugi__name">Strzyżenie brody</span>
+                <span class="uslugi__price">od 75 zł.</span>
+              </li>
+              <li class="uslugi__item">
+                <span class="uslugi__name">Strzyżenie wąsów </span>
+                <span class="uslugi__price">od 50 zł.</span>
+              </li>
+              <li class="uslugi__item">
+                <span class="uslugi__name">Golenie brzytwą</span>
+                <span class="uslugi__price">od 75 zł.</span>
+              </li>
+            </ul>
+            <ul class="uslugi__list">
+              <li class="uslugi__item">
+                <span class="uslugi__name">Strzyżenie jedna długość</span>
+                <span class="uslugi__price">od 50 zł.</span>
+              </li>
+              <li class="uslugi__item">
+                <span class="uslugi__name">Strzyżenie maszynką</span>
+                <span class="uslugi__price">od 75 zł.</span>
+              </li>
+              <li class="uslugi__item">
+                <span class="uslugi__name">Strzyżenie chłopca (do 12 lat)</span>
+                <span class="uslugi__price">od 80 zł.</span>
+              </li>
+              <li class="uslugi__item">
+                <span class="uslugi__name">Repigmentacja włosów</span>
+                <span class="uslugi__price">od 100 zł.</span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn uslugi__btn btn--light" type="button">
+            REJESTRACJA ONLINE
+          </button>
+        </div>
+      </section>
+      <!-- ============ DLACZEGO MY ============ -->
+      <section class="dlaczego-my__section section">
+        <div class="container dlaczego-my__container">
+          <div class="dlaczego-my__left">
+            <ul class="stats__list">
+              <li class="stats__item">
+                <p class="stats__number">600</p>
+                <p class="stats__info">Zadowolonych klientów dziennie</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__number">50</p>
+                <p class="stats__info">Nagród za najlepszą obsługę</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__number">20</p>
+                <p class="stats__info">Najlepszych barberów Warszawy</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__number">100</p>
+                <p class="stats__info">Prezentów stałym klientom</p>
+              </li>
+            </ul>
+          </div>
+          <div class="dlaczego-my__right">
+            <p class="over-title">TRADYCYJNA SZKOŁA</p>
+            <h2 class="section-header">Dlaczego klienci przychodzą do nas?</h2>
+            <p class="description">
+              O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i
+              odczuć, niż 10 razy przeczytać.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ============ BARBERZY ============ -->
+      <section class="barberzy__section section">
+        <div class="container barberzy__container">
+          <p class="over-title">Dla prawdziwych mężczyzn</p>
+          <h2 class="barberzy__section-header section-header">Nasi barberzy</h2>
+          <ul class="barberzy__list">
+            <li class="barberzy__item">
+              <img
+                class="barberzy__img"
+                src="./images/barberzy-img1.jpg"
+                alt="John Smith"
+                width="370"
+                height="346"
+              />
+              <h3 class="barberzy__name">John Smith</h3>
+              <p class="barberzy__job">Extreme Barber</p>
+              <ul class="media__list">
+                <li class="media__item">
+                  <a class="media__link" href="#">i</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">t</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">f</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">l</a>
+                </li>
+              </ul>
+            </li>
+            <li class="barberzy__item">
+              <img
+                class="barberzy__img"
+                src="./images/barberzy-img2.jpg"
+                alt="Michele Doe"
+                width="370"
+                height="346"
+              />
+              <h3 class="barberzy__name">Michele Doe</h3>
+              <p class="barberzy__job">Extreme Barber</p>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="barberzy__item">
+              <img
+                class="barberzy__img"
+                src="./images/barberzy-img3.jpg"
+                alt="Alan Black"
+                width="370"
+                height="346"
+              />
+              <h3 class="barberzy__name">Alan Black</h3>
+              <p class="barberzy__job">Extreme Barber</p>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ============ GALERIA ============ -->
+      <section class="galeria__section section">
+        <div class="container galeria__container">
+          <h2 class="galeria__header">Galeria zdjęć</h2>
+          <p class="galeria__over-title over-title">
+            W języku łacinskim “barba” oznacza “broda”
+          </p>
+          <ul class="galeria__list">
+            <li class="galeria__item">
+              <img
+                class="galeria__img"
+                src="./images/galeria-img1.jpg"
+                alt="przycinanie włosów"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="galeria__item">
+              <img
+                class="galeria__img"
+                src="./images/galeria-img2.jpg"
+                alt="golenie brody"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="galeria__item">
+              <img
+                class="galeria__img"
+                src="./images/galeria-img3.jpg"
+                alt="nawilżanie cery twarzy"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="galeria__item">
+              <img
+                class="galeria__img"
+                src="./images/galeria-img4.jpg"
+                alt="golenie brzytwą"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ============ FORMULARZ I KONTAKT ============ -->
+      <section class="formularz-kontakt__section section">
+        <div class="container formularz-kontakt__container">
+          <!-- Formularz -->
+          <div class="formularz">
+            <h2
+              class="
+                section-header
+                formularz-kontakt__section-header
+                section-header--light
+              "
+            >
+              Rezerwacja online
+            </h2>
+            <p style="color: white">!formularze do wpisania pozniej!</p>
+            <button class="btn formularz-kontakt__btn btn--light">
+              wyślij
+            </button>
+          </div>
+          <!-- Kontakt -->
+          <div class="kontakt">
+            <h2
+              class="
+                section-header
+                formularz-kontakt__section-header
+                section-header--light
+              "
+            >
+              Kontakt
+            </h2>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link"
+                    href="https://goo.gl/maps/dwXW9GHTtMnHYjRj8"
+                    target="_blank"
+                    >ul. Prosta 20 Warszawa, 00-001</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="godziny">Godziny otwarcia</p>
+            <p class="godziny-details">Codziennie od 9:00 do 22:00</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ============ footer ============ -->
+    <footer class="footer section footer__section">
+      <div class="container footer__container">
+        <p class="copyright">&copy; Copytight 2020</p>
+        <ul class="footer__social-list social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
